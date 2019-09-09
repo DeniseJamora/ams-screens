@@ -1,0 +1,177 @@
+<!--
+
+=========================================================
+* Argon Dashboard - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Set Team Tasks
+  </title>
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+  <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid" id="navbar">
+      <script>
+        $( "#navbar" ).load( "navbar.html" );
+      </script>
+    </div>
+  </nav>
+  <div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid" id="header">
+        <script>
+          $( "#header" ).load( "header.html" );
+        </script>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt--7">
+      <!-- Table -->
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-header border-1">
+              <h3 class="mb-0">Set Team Tasks</h3>
+            </div>
+            <div class="card-body px-lg-5 py-lg-5">
+              <form role="form">
+                <div class="text-muted text-left mt-2 mb-3">
+                  <button type="button" class="btn btn-success" onclick="addTask()">Add</button><br>
+                </div><br>
+                <div id="tasks">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group mb-3">
+                        <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="Task" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="" type="date">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = 'none'">X</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-footer py-4">
+              <div class="text-right">
+                <a href="createteam.html"><button type="button" class="btn btn-primary">Save</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-xl-6">
+            <div class="copyright text-center text-xl-left text-muted">
+              &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core   -->
+  <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--   Optional JS   -->
+  <!--   Argon JS   -->
+  <script src="../assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "argon-dashboard-free"
+      });
+  </script>
+
+  <script>
+    function addTask(){
+      var x = '<div class="row">'+
+                          '<div class="col-6">'+
+                            '<div class="form-group mb-3">'+
+                              '<div class="input-group input-group-alternative">'+
+                                '<input class="form-control" placeholder="Task" type="text">'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<div class="form-group">'+
+                              '<div class="input-group input-group-alternative">'+
+                                '<input class="form-control" placeholder="" type="date">'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-1">'+
+                            '<button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = ' + "'" + 'none' + "'"+ '">X</button>'+
+                          '</div>'+
+                        '</div>';
+
+      document.getElementById('tasks').insertAdjacentHTML('beforeend', x);
+    }
+  </script>
+</body>
+
+</html>
