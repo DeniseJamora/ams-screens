@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Document Outlines
+    Accreditations
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -66,44 +66,54 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-0">
-              <div class="row">
-                <div class="col">
-                  <h3 class="mb-0">Document Outlines</h3>
-                </div>
-                <div class="col text-right">
-                <!-- Button trigger modal -->
-                <a href="createdocuoutline.html"><button type="button" class="btn btn-primary btn-sm" style="float:right">
-                  <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
-                  Add Document Outline
-                </button></a>
-              </div>
-              </div>
+              <h3 class="mb-0">Accreditations</h3>
             </div>
             <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-light">
                   <tr>
-                    <th scope="col">Document Name</th>
-                    <th scope="col">Accrediting Agency</th>
-                    <th scope="col">Completed Documents</th>
+                    <th scope="col">Degree Program</th>
+                    <th scope="col">Agency</th>
+                    <th scope="col">Survey Executive</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">End Date</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">
-                      Self-Survey Report for CAC
-                    </th>
-                    <td scope="row">
-                      ABET
+                    <td>
+                      BS Information Systems
                     </td>
                     <td>
-                      <span>
-                        <a href="#">BSINSYS ABET Self-Survey Report</a>
-                      </span><br>
-                      <span>
-                        <a href="#">BSIT ABET Self-Survey Report</a>
-                      </span><br>
+                      ABET
+                    </td>
+                    <td scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">Jessica Jones</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="mr-2">60%</span>
+                        <div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      N/A
+                    </td>
+                    <td>
+                      N/A
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
@@ -111,16 +121,53 @@
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="summary.html">View</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Timeline</a>
                           <a class="dropdown-item" href="#">Delete</a>
                         </div>
                       </div>
                     </td>
                   </tr>
+                  </tr>
                 </tbody>
               </table>
             </div>
             <div class="card-footer py-4">
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Accreditation Timeline</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group mb-3">
+                        <label class="form-control-label">BSINSYS PAASCU Timeline</label><br><br>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input class="custom-control-input" id="customCheck1" type="checkbox">
+                            <label class="custom-control-label" for="customCheck1">Initial Draft</label><span><h6 class="text-muted">Dec 10, 2019</h6></span>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input class="custom-control-input" id="customCheck2" type="checkbox">
+                            <label class="custom-control-label" for="customCheck2">Survey Executive</label><span><h6 class="text-muted">Dec 10, 2019</h6></span>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input class="custom-control-input" id="customCheck3" type="checkbox">
+                            <label class="custom-control-label" for="customCheck3">User</label><span><h6 class="text-muted">Dec 10, 2019</h6></span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Edit</button>
+                      <a href="completeaccreditation.html"><button type="button" class="btn btn-success">Complete Accreditation</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">

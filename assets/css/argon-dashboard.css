@@ -20687,4 +20687,33 @@ pre>code.highlight {
   margin-bottom: 30px;
 }
 
+.dataTables_wrapper{
+  font-size:.875rem
+}
+
+table.dataTable{
+  margin-bottom:1.25rem!important;
+  border-bottom:1px solid #e9ecef
+}
+
+table.dataTable tbody>tr.selected{
+  background-color:#5e72e4
+}
+
+.dataTables_info,.dataTables_length,.dt-buttons{
+  padding-left:1.5rem
+}
+
+.dataTables_length .form-control{
+  margin:0 .375rem
+}
+
+.dataTables_filter{
+  display:inline-block;float:right;padding-right:1.5rem
+}
+
+.dataTables_paginate{
+  padding-right:1.5rem
+}
+
 /*# sourceMappingURL=dashboard-free.css.map */

@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Create Document Outline
+    New Accreditation
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -66,7 +66,7 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-1">
-              <h3 class="mb-0">Create Document Outline</h3>
+              <h3 class="mb-0">Assign Teams</h3>
             </div>
             <div class="card-body px-lg-5 py-lg-5">
               <form role="form">
@@ -75,7 +75,7 @@
                     <div class="form-group mb-3">
                       <label class="form-control-label">Agency</label>
                       <div class="input-group input-group-alternative">
-                        <select class="form-control">
+                        <select class="form-control" disabled>
                             <option>ABET</option> 
                             <option>PAASCU</option>
                             <option>AUN</option>
@@ -88,18 +88,14 @@
                     <div class="form-group">
                       <label class="form-control-label">Document Name</label>
                       <div class="input-group input-group-alternative">
-                        <input class="form-control" placeholder="e.g. ABET CAC Self-Survey Report" type="text">
+                        <input class="form-control" value="ABET CAC Self-Survey Report" type="text" disabled>
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr>
-                <div class="text-muted text-left mt-2 mb-3">
-                  <button type="button" class="btn btn-success" onclick="addSection()">Add</button><br>
-                </div><br>
                 <div id="section">
                   <div>
-                  <br>
                   <div class="row">
                     <div class="col-1">
                       <button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button>
@@ -107,7 +103,7 @@
                     <div class="col-7">
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Section" type="text">
+                          <input class="form-control" value="Chapter 1.0 Introduction" type="text" disabled>
                         </div>
                       </div>
                     </div>
@@ -115,15 +111,13 @@
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
                           <select class="form-control">
-                              <option>Narrative</option>
-                              <option>Score Type 1</option>
-                              <option>Score Type 2</option>                   
+                              <option>Team A</option>
+                              <option>Team B</option>   
+                              <option>Team C</option>   
+                              <option>Team D</option>                 
                           </select>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-1">
-                      <button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = 'none'">x</button>
                     </div>
                   </div>
                   </div>
@@ -179,50 +173,6 @@
         token: "ee6fab19c5a04ac1a32a645abde4613a",
         application: "argon-dashboard-free"
       });
-  </script>
-
-  <script>
-    function addSection(){
-      var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-7"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
-
-      document.getElementById('section').insertAdjacentHTML('beforeend', x);
-    }
-  </script>
-  <script>
-    function addSub1(parentDiv){
-      var x = '<div class="row"><div class="col-1"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub2(this.parentElement.parentElement)">+</button></div><div class="col-6"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
-
-        var div = parentDiv.parentElement;
-
-        div.insertAdjacentHTML('beforeend', x);
-    }
-  </script>
-  <script>
-    function addSub2(parentDiv){
-      var x = '<div class="row"><div class="col-2"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub3(this.parentElement.parentElement)">+</button></div><div class="col-5"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
-
-        var div = parentDiv.parentElement;
-
-        div.insertAdjacentHTML('beforeend', x);
-    }
-  </script>
-  <script>
-    function addSub3(parentDiv){
-      var x = '<div class="row"><div class="col-3"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub4(this.parentElement.parentElement)">+</button></div><div class="col-4"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
-
-        var div = parentDiv.parentElement;
-
-        div.insertAdjacentHTML('beforeend', x);
-    }
-  </script>
-  <script>
-    function addSub4(parentDiv){
-      var x = '<div class="row"><div class="col-4"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub5(this.parentElement.parentElement)">+</button></div><div class="col-3"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
-
-        var div = parentDiv.parentElement;
-
-        div.insertAdjacentHTML('beforeend', x);
-    }
   </script>
 </body>
 
