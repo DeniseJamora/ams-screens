@@ -71,70 +71,28 @@
             </div>
             <div class="card-body px-lg-5 py-lg-5">
               <form role="form">
-                <div class="text-muted text-left mt-2 mb-3">Accreditation</div><br>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group mb-3">
-                      <label class="form-control-label">Agency</label>
-                      <div class="input-group input-group-alternative">
-                        <select class="form-control">
-                            <option>ABET</option> 
-                            <option>PAASCU</option>                   
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="form-control-label">Program</label>
-                      <div class="input-group input-group-alternative">
-                        <select class="form-control">
-                            <option>BSINSYS</option> 
-                            <option>PAASCU</option>                   
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+                <div class="text-muted text-left mt-2 mb-3">
+                  Timeline<br><br>
+                  <button type="button" class="btn btn-success" onclick="addTask()">Add</button><br>
                 </div><br>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group mb-3">
-                      <label class="form-control-label">Document Outline</label>
-                      <div class="input-group input-group-alternative">
-                        <select class="form-control">
-                            <option>Please Select</option> 
-                            <option>Self-Survey Report for CAC</option> 
-                        </select>
+                <div id="tasks">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group mb-3">
+                        <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="Task" type="text">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group mb-3">
-                      <label class="form-control-label">Type</label>
-                      <div class="input-group input-group-alternative">
-                        <select class="form-control">
-                            <option>Initial Accreditation</option> 
-                            <option>Reaccreditation</option>                   
-                        </select>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="" type="date">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div><br>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group mb-3">
-                      <label class="form-control-label">Report Submission Date</label>
-                      <div class="input-group input-group-alternative">
-                        <input class="form-control" placeholder="" type="date">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="form-control-label">On-Site Visit Date</label>
-                      <div class="input-group input-group-alternative">
-                        <input class="form-control" placeholder="" type="date">
-                      </div>
+                    <div class="col-1">
+                      <button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = 'none'">X</button>
                     </div>
                   </div>
                 </div>
@@ -142,7 +100,7 @@
             </div>
             <div class="card-footer py-4">
               <div class="text-right">
-                <a href="timeline.html"><button type="button" class="btn btn-primary">Next</button></a>
+                <a href="createteam.html"><button type="button" class="btn btn-primary">Next</button></a>
               </div>
             </div>
           </div>
@@ -189,6 +147,32 @@
         token: "ee6fab19c5a04ac1a32a645abde4613a",
         application: "argon-dashboard-free"
       });
+  </script>
+
+  <script>
+    function addTask(){
+      var x = '<div class="row">'+
+                          '<div class="col-6">'+
+                            '<div class="form-group mb-3">'+
+                              '<div class="input-group input-group-alternative">'+
+                                '<input class="form-control" placeholder="Task" type="text">'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<div class="form-group">'+
+                              '<div class="input-group input-group-alternative">'+
+                                '<input class="form-control" placeholder="" type="date">'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-1">'+
+                            '<button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = ' + "'" + 'none' + "'"+ '">X</button>'+
+                          '</div>'+
+                        '</div>';
+
+      document.getElementById('tasks').insertAdjacentHTML('beforeend', x);
+    }
   </script>
 </body>
 
