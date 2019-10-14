@@ -1,3 +1,4 @@
+
 <!--
 
 =========================================================
@@ -104,7 +105,7 @@
                     <div class="col-1">
                       <button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button>
                     </div>
-                    <div class="col-7">
+                    <div class="col-6">
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
                           <input class="form-control" placeholder="Section" type="text">
@@ -116,8 +117,20 @@
                         <div class="input-group input-group-alternative">
                           <select class="form-control">
                               <option>Narrative</option>
-                              <option>Score Type 1</option>
-                              <option>Score Type 2</option>                   
+                              <option>Narrative w/ Table</option> 
+                              <option>Narrative w/ Score</option> 
+                              <option>Narrative w/ Score & Table</option>           
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group mb-3">
+                        <div class="input-group input-group-alternative">
+                          <select class="form-control">
+                            <option>N/A</option>
+                            <option>A - E</option>
+                            <option>1 - 7</option>           
                           </select>
                         </div>
                       </div>
@@ -183,14 +196,14 @@
 
   <script>
     function addSection(){
-      var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-7"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
+      var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-6"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
 
       document.getElementById('section').insertAdjacentHTML('beforeend', x);
     }
   </script>
   <script>
     function addSub1(parentDiv){
-      var x = '<div class="row"><div class="col-1"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub2(this.parentElement.parentElement)">+</button></div><div class="col-6"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
+      var x = '<div class="row"><div class="col-1"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub2(this.parentElement.parentElement)">+</button></div><div class="col-5"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
         var div = parentDiv.parentElement;
 
@@ -199,7 +212,7 @@
   </script>
   <script>
     function addSub2(parentDiv){
-      var x = '<div class="row"><div class="col-2"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub3(this.parentElement.parentElement)">+</button></div><div class="col-5"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
+      var x = '<div class="row"><div class="col-2"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub3(this.parentElement.parentElement)">+</button></div><div class="col-4"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
         var div = parentDiv.parentElement;
 
@@ -208,7 +221,7 @@
   </script>
   <script>
     function addSub3(parentDiv){
-      var x = '<div class="row"><div class="col-3"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub4(this.parentElement.parentElement)">+</button></div><div class="col-4"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
+      var x = '<div class="row"><div class="col-3"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub4(this.parentElement.parentElement)">+</button></div><div class="col-3"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
         var div = parentDiv.parentElement;
 
@@ -217,7 +230,7 @@
   </script>
   <script>
     function addSub4(parentDiv){
-      var x = '<div class="row"><div class="col-4"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub5(this.parentElement.parentElement)">+</button></div><div class="col-3"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
+      var x = '<div class="row"><div class="col-4"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub5(this.parentElement.parentElement)">+</button></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
         var div = parentDiv.parentElement;
 

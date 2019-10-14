@@ -1,0 +1,2047 @@
+<!--
+
+=========================================================
+* Argon Dashboard - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Faculty Information Form
+  </title>
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+  <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid" id="navbar">
+      <script>
+        $( "#navbar" ).load( "navbar.html" );
+      </script>
+    </div>
+  </nav>
+  <div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid" id="header"><!-- Brand -->
+        <p class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"><a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="tables.html">Dashboard</a> | FIF</p>
+        <script>
+          $( "#header" ).load( "header.html" );
+        </script>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt--7">
+      <!-- Table -->
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-header border-1">
+              <h3 class="mb-0">Faculty Information Form / FIF</h3>
+            </div>
+            <div class="card-body px-lg-5 py-lg-5">
+              <form role="form">
+                <h2 class="text-uppercase">Faculty Profile</h2><br>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Faculty ID Number</label>
+                      <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="12345678" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Name</label>
+                      <div class="input-group input-group-alternative">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Middle name">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">College/School/Unit</label>
+                      <div class="input-group input-group-alternative">
+                        <select class="form-control" id="">
+                          <option value="1" selected>CoB - College of Business</option>
+                          <option value="2">SoE - School of Economics</option>
+                          <option value="3">CCS - College of Computer Studies</option>
+                          <option value="4">CED - College of Education</option>
+                          <option value="5">COE - College of Engineering</option>
+                          <option value="6">COL - College of Law</option>
+                          <option value="7">CLA - College of Liberal Arts</option>
+                          <option value="8">COS - College of Science</option>
+                          <option value="9">Student Affairs</option>
+                          <option value="10">AVCAS - Office of the Associate Vice Chancellor for Academic Services</option>
+                          <option value="11">EVPERI - Executive Vice President for External Relations and Internationalization</option>
+                          <option value="12">OPC - Office of the President and Chancellor</option>
+                          <option value="13">VCLMAR - Office of the Vice Chancellor for Lasallian Mission and Alumni Relations</option>
+                          <option value="14">VCR - Office of The Associate Vice Chancellor for Research</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Department/Office</label>
+                      <div class="input-group input-group-alternative">
+                        <select class="form-control" id="">
+                          <option value="1" selected>ST - Software Technology</option>
+                          <option value="2">CT - Computer Technology</option>
+                          <option value="3">IT - Information Technology</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Faculty Classification</label>
+                      <div class="input-group input-group-alternative">
+                        <select class="form-control" id="">
+                          <option value="1" selected>FT - Full-time</option>
+                          <option value="2">PT - Part-time</option>
+                          <option value="3">ASF - Academic Service Faculty</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Rank</label>
+                      <div class="input-group input-group-alternative">
+                        <select class="form-control" id="">
+                          <option value="1" selected>Faculty</option>
+                          <option value="2">Admin</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Date Submitted</label>
+                      <!--<input type="text" value ="today();" id="datepicker"/>-->
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="" type="date">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+<!--start of academic background-->
+                <div class="row">
+                  <div class="col">
+                      <h2 class="text-uppercase">Academic Background</h2>
+                  </div>
+                  <div class="col-6">
+                      <button type="button" class="btn btn-success float-right" onclick="addAcadBg()">Add</button>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Degree(s) Earned</th>
+                    <th scope="col">Title of Degree</th>
+                    <th scope="col">Area of Specialization</th>
+                    <th scope="col">Year Obtained</th>
+                    <th scope="col">Educational Institution</th>
+                    <th scope="col">Location (City, Country)</th>
+                    <th scope="col">S.O. Number</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                        <option value="1" selected>Doctoral</option>
+                        <option value="2">Master's</option>
+                        <option value="3">Bachelor's</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="BS INSYS">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="feel special">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="number" class="form-control" placeholder="2010">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="123">
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="dropdown">
+                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">Add</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of academic background-->
+<!--start of grad studies-->
+                <div class="row">
+                  <div class="col">
+                      <h3 class="text-uppercase">If Pursuing Graduate Studies</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Degree being pursued</th>
+                    <th scope="col">University</th>
+                    <th scope="col">Stage of Graduate Studies</th>
+                    <th scope="col">No. of units completed</th>
+                    <th scope="col">Inclusive dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="MS INSYS">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                          <option value="1" selected>Dissertation</option>
+                          <option value="2">Thesis</option>
+                          <option value="3">Comprehensives</option>
+                          <option value="4">Academic courses</option>
+                        </select>
+                      </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="10">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="dropdown">
+                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">Add</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of grad studies-->
+<!--start of acad training-->
+                <div class="row">
+                  <div class="col">
+                      <h3 class="text-uppercase">Additional Academic Training</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Training Title</th>
+                    <th scope="col">Organization / Institution Offering the Training</th>
+                    <th scope="col">Venue (City,Country)</th>
+                    <th scope="col">Inclusive dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="post-doctoral work">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="dropdown">
+                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">Add</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of acad training-->
+              <hr/><h2 class="text-uppercase">Educational and Professional Experience</h2><br>
+                <div class="row">
+                  <div class="col">
+                      <h3 class="text-uppercase">1. Teaching Experience</h3>
+                  </div>
+                </div>
+<!--start of educ prof dlsu-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">Teaching Experience at DLSU</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Level</th>
+                    <th scope="col">No. of years</th>
+                    <th scope="col">Inclusive dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                        <option value="1" selected>Tertiary</option>
+                        <option value="2">Secondary</option>
+                        <option value="3">Elementary</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="3">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of educ prof dlsu-->
+<!--start of educ prof others-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">Teaching Experience in other schools</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Level</th>
+                    <th scope="col">Name of school</th>
+                    <th scope="col">Inclusive dates</th>
+                    <th scope="col">No. of years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                        <option value="1" selected>Tertiary</option>
+                        <option value="2">Secondary</option>
+                        <option value="3">Elementary</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="3">
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="dropdown">
+                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                        <a class="dropdown-item" href="#">Add</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                    </div>
+                  </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of educ prof others-->
+                <br>
+<!--start of prof exp-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">2. Professional Experience</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Year Passed</th>
+                      <th scope="col">Licensure Examination Passed</th>
+                      <th scope="col">License Number</th>
+                      <th scope="col">Valid Until</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="number" class="form-control" placeholder="2010">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="license">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="1234567890">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="date" class="form-control">
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tbody>
+                </table>
+              </div>
+<!--end of prof exp-->
+<!--start of prof prac dlsu-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">Employment/Professional Practice in DLSU other than teaching</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Position/Designation</th>
+                      <th scope="col">Unit/Department/College</th>
+                      <th scope="col">No. of Years</th>
+                      <th scope="col">Inclusive Dates</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="research">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="dlsu">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="number" class="form-control" placeholder="5">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="date" class="form-control">
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tbody>
+                </table>
+              </div>
+<!--end of prof prac dlsu-->
+<!--start of prof prac out dlsu-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">Professional Practice, Industrial Practice, or Employment outside DLSU other than teaching</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Nature of Practice/Employment</th>
+                      <th scope="col">Organization/Institution</th>
+                      <th scope="col">No. of Years</th>
+                      <th scope="col">Inclusive Dates</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="research">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="text" class="form-control" placeholder="dlsu">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="number" class="form-control" placeholder="5">
+                      </div>
+                    </td>
+                    <td scope="row">
+                      <div class="input-group input-group-alternative">
+                        <input type="date" class="form-control">
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tbody>
+                </table>
+              </div>
+<!--end of prof prac out dlsu-->
+              <hr/><h2 class="text-uppercase">Professional Activities</h2><br>
+<!--start of lead prof org-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">1. Leadership in professional organizations</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Designation/Role</th>
+                    <th scope="col">Professional Organization</th>
+                    <th scope="col">Inclusive years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="adviser">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="lscs">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of lead prof org-->
+<!--start of mem prof org-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">2. Membership in professional organizations</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Designation/Role</th>
+                    <th scope="col">Professional Organization</th>
+                    <th scope="col">Inclusive years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="adviser">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="lscs">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of mem prof org-->
+<!--start of awards-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">3. Outstanding Achievements/ Awards/ Recognition Received (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Outstanding Achievements/ Awards/ Recognition</th>
+                    <th scope="col">Awarding Body</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="best professor">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="lscs">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of awards-->
+<!--start of internal research-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">4. Internally Funded Research projects/activities (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Research Projects/Activities</th>
+                    <th scope="col">Funding Agency/Unit (as applicable)</th>
+                    <th scope="col">Amount of Research Grant (Php)</th>
+                    <th scope="col">Inclusive Years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="my research">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="number" class="form-control" placeholder="10000">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of internal research-->
+<!--start of external research-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">5. Externally Funded Research projects/activities (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Research Projects/Activities</th>
+                    <th scope="col">Funding Agency</th>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Amount of Research Grant</th>
+                    <th scope="col">Inclusive Years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="my research">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                        <option value="1" selected>Philippine Peso</option>
+                        <option value="2">Pound</option>
+                        <option value="3">US dollar</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="number" class="form-control" placeholder="10000">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of external research-->
+<!--start of research grants-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">6.  Research grants, fellowships, scholarships received (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Research Projects/Activities</th>
+                    <th scope="col">Funding Agency</th>
+                    <th scope="col">Inclusive Years</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="my research">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="dlsu">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of research grants-->
+<!--start of journal-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">7. Journal Publications (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Journal Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Volume Number</th>
+                    <th scope="col">Issue Number</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Type</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="my journal">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="volume">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="issue">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="pages">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                          <option value="1" selected>ISI</option>
+                          <option value="2">Scopus</option>
+                          <option value="3">Abstracted and Refereed</option>
+                          <option value="4">Refereed</option>
+                          <option value="5">Non-refereed</option>
+                        </select>
+                      </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of journal-->
+<!--start of prototype-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">8. Prototypes (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Journal Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Volume Number</th>
+                    <th scope="col">Issue Number</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">ISSN/ISBN</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="my journal">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="volume">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="issue">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="pages">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="1234567890">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of prototype-->
+<!--start of patent-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">9. Patents (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Issuing Country</th>
+                    <th scope="col">Patent Number</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="japan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="1234567890">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of patent-->
+<!--start of books-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">10. Books and Textbooks (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Publisher</th>
+                    <th scope="col">Place of Publication</th>
+                    <th scope="col">Date of Publication</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the publisher">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="1234567890">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of books-->
+<!--start of edit books-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">11. Chapter in Edited Book (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title of Work</th>
+                    <th scope="col">Title of Book</th>
+                    <th scope="col">Editor(s)</th>
+                    <th scope="col">Publisher</th>
+                    <th scope="col">Place of Publication</th>
+                    <th scope="col">Date of Publication</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the editor">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the publisher">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="123">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="1234567890">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of edit books-->
+<!--start of papers-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">12. Papers published in conference proceedings (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title of Paper</th>
+                    <th scope="col">Title of Conference Proceedings</th>
+                    <th scope="col">Publisher</th>
+                    <th scope="col">Place of Publication</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the publisher">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="123">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of papers-->
+<!--start of publish creatives-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">13. Published short stories, novel, poetry, play, screenplay, creative work (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Published In</th>
+                    <th scope="col">Publisher</th>
+                    <th scope="col">Place of Publication</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="school">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the publisher">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="manila">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="123">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of publish creatives-->
+<!--start of present creatives-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">14. Play, screenplay, film, creative work performed or presented (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Venue of Performance / Presentation</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="school">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of present creatives-->
+<!--start of program develop-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">15. Programs, modules developed</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the remark">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of program develop-->
+<!--start of research output-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">16. Other research outputs (working papers; research reports; conference papers/posters, etc) since 2005</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Author(s)</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="Dela Cruz, Juan">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                          <option value="1" selected>Working Paper</option>
+                          <option value="2">Research Report</option>
+                          <option value="3">Paper presented in conference</option>
+                          <option value="4">Consultancy Report</option>
+                          <option value="5">Commissioned Report</option>
+                          <option value="6">Others</option>
+                        </select>
+                      </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the remark">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of research output-->
+<!--start of conference-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">17. Conferences, workshops, seminars, and training programs attended (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Inclusive Dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <select class="form-control match-content">
+                          <option value="1" selected>Conferences</option>
+                          <option value="2">Workshops</option>
+                          <option value="3">Seminars</option>
+                          <option value="4">Training programs</option>
+                          <option value="5">Others</option>
+                        </select>
+                      </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the title">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the venue">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of conference-->
+              <hr/><h2 class="text-uppercase">Community Service</h2><br>
+<!--start of activity-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">1. In DLSU (Department, Unit, College, University) Activities since 2005</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Description of Involvement/ Service/ Work Done</th>
+                    <th scope="col">DLSU</th>
+                    <th scope="col">Unit/Committee</th>
+                    <th scope="col">Inclusive Dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the description">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the org">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the unit">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of activity-->
+<!--start of prof org-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">2. In Professional Organizations (Local and International) since 2005</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Description of Involvement/ Service/ Work Done</th>
+                    <th scope="col">Professional Organization</th>
+                    <th scope="col">Project / Activity Site</th>
+                    <th scope="col">Inclusive Dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the description">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the org">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the site">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of prof org-->
+<!--start of gov org-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">3. With Government Organizations and Agencies (since 2005)</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Description of Involvement/ Service/ Work Done</th>
+                    <th scope="col">Government Organization and Agencies</th>
+                    <th scope="col">Project / Activity Site</th>
+                    <th scope="col">Inclusive Dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the description">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the agency">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the site">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of gov org-->
+<!--start of others org-->
+                <div class="row">
+                  <div class="col-11">
+                      <h3 class="text-uppercase">4. Others (e.g. NGOs, advocacy groups, neighborhood associations, local communities, Rotary, Lions, church, faith, and community) since 2005</h3>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Description of Involvement/ Service/ Work Done</th>
+                    <th scope="col">Organization</th>
+                    <th scope="col">Project / Activity Site</th>
+                    <th scope="col">Inclusive Dates</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the description">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the org">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="text" class="form-control" placeholder="the site">
+                    </div>
+                  </td>
+                  <td scope="row">
+                    <div class="input-group input-group-alternative">
+                      <input type="date" class="form-control">
+                    </div>
+                  </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">Add</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                      </div>
+                    </td>
+                </tbody>
+              </table>
+            </div>
+<!--end of others org-->
+              </form>
+            </div>
+            <div class="card-footer py-4">
+              <div class="text-right">
+                <a href="createteam.html"><button type="button" class="btn btn-primary">Submit</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-xl-6">
+            <div class="copyright text-center text-xl-left text-muted">
+              &copy; 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--   Core   -->
+  <script src="../assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--   Optional JS   -->
+  <!--   Argon JS   -->
+  <script src="../assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "argon-dashboard-free"
+      });
+  </script>
+
+  <script type="text/javascript">
+    const $tableID = $('#table');
+ const $BTN = $('#export-btn');
+ const $EXPORT = $('#export');
+
+ const newTr = `
+<tr class="hide">
+  <td class="pt-3-half" contenteditable="true">Example</td>
+  <td class="pt-3-half" contenteditable="true">Example</td>
+  <td class="pt-3-half" contenteditable="true">Example</td>
+  <td class="pt-3-half" contenteditable="true">Example</td>
+  <td class="pt-3-half" contenteditable="true">Example</td>
+  <td class="pt-3-half">
+    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+  </td>
+  <td>
+    <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0 waves-effect waves-light">Remove</button></span>
+  </td>
+</tr>`;
+
+ $('.table-add').on('click', 'i', () => {
+
+   const $clone = $tableID.find('tbody tr').last().clone(true).removeClass('hide table-line');
+
+   if ($tableID.find('tbody tr').length === 0) {
+
+     $('tbody').append(newTr);
+   }
+
+   $tableID.find('table').append($clone);
+ });
+
+ $tableID.on('click', '.table-remove', function () {
+
+   $(this).parents('tr').detach();
+ });
+
+ $tableID.on('click', '.table-up', function () {
+
+   const $row = $(this).parents('tr');
+
+   if ($row.index() === 1) {
+     return;
+   }
+
+   $row.prev().before($row.get(0));
+ });
+
+ $tableID.on('click', '.table-down', function () {
+
+   const $row = $(this).parents('tr');
+   $row.next().after($row.get(0));
+ });
+
+ // A few jQuery helpers for exporting only
+ jQuery.fn.pop = [].pop;
+ jQuery.fn.shift = [].shift;
+
+ $BTN.on('click', () => {
+
+   const $rows = $tableID.find('tr:not(:hidden)');
+   const headers = [];
+   const data = [];
+
+   // Get the headers (add special header logic here)
+   $($rows.shift()).find('th:not(:empty)').each(function () {
+
+     headers.push($(this).text().toLowerCase());
+   });
+
+   // Turn all existing rows into a loopable array
+   $rows.each(function () {
+     const $td = $(this).find('td');
+     const h = {};
+
+     // Use the headers from earlier to name our hash keys
+     headers.forEach((header, i) => {
+
+       h[header] = $td.eq(i).text();
+     });
+
+     data.push(h);
+   });
+
+   // Output the result
+   $EXPORT.text(JSON.stringify(data));
+ });
+  </script>
+</body>
+</html>

@@ -108,7 +108,7 @@
                       </div>
                     </th>
                     <td>
-                      Faculty
+                      Administrator
                     </td>
                     <td>
                       IT
@@ -126,6 +126,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#otherModal">Edit User Role</a>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#otherModal">Edit User Type</a>
                           <a class="dropdown-item" href="#">Delete</a>
                         </div>
                       </div>
@@ -147,23 +148,27 @@
                       </button>
                     </div>
                     <div class="modal-body">
-              <form role="form">
-                <div class="form-group mb-3">
-                  <label class="form-control-label">User Role</label><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Administrator</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Survey Executive</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">User</label>
-                    </div>
-                </div>
-              </form>
+                      <form role="form">
+                        <div class="form-group mb-3">
+                          <label class="form-control-label">User Role</label><br>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Administrator</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input class="custom-control-input" id="customCheck2" type="checkbox">
+                              <label class="custom-control-label" for="customCheck2">Survey Executive</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input class="custom-control-input" id="customCheck3" type="checkbox">
+                              <label class="custom-control-label" for="customCheck3">Faculty</label>
+                            </div>
+                            <div class="custom-control custom-checkbox mb-2">
+                              <input class="custom-control-input" id="customCheck4" type="checkbox">
+                              <label class="custom-control-label" for="customCheck4">Staff</label>
+                            </div>
+                        </div>
+                      </form>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -184,37 +189,37 @@
                       </button>
                     </div>
                     <div class="modal-body">
-              <form role="form">
-                <div class="form-group mb-3">
-                  <label class="form-control-label">User Role Name</label>
-                  <div class="input-group input-group-alternative">
-                    <input class="form-control" placeholder="" type="text">
-                  </div>
-                </div>
-                <div class="form-group mb-3">
-                  <label class="form-control-label">Permissions</label><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Agencies</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Programs</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Users</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Document Outlines</label>
-                    </div><br>
-                    <div class="custom-control custom-checkbox mb-0">
-                      <input class="custom-control-input" id="customCheck1" type="checkbox">
-                      <label class="custom-control-label" for="customCheck1">Accreditations</label>
-                    </div>
-                </div>
-              </form>
+                      <form role="form">
+                        <div class="form-group mb-3">
+                          <label class="form-control-label">User Role Name</label>
+                          <div class="input-group input-group-alternative">
+                            <input class="form-control" placeholder="" type="text">
+                          </div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <label class="form-control-label">Permissions</label><br>
+                            <div class="custom-control custom-checkbox mb-0">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Agencies</label>
+                            </div><br>
+                            <div class="custom-control custom-checkbox mb-0">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Programs</label>
+                            </div><br>
+                            <div class="custom-control custom-checkbox mb-0">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Users</label>
+                            </div><br>
+                            <div class="custom-control custom-checkbox mb-0">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Document Outlines</label>
+                            </div><br>
+                            <div class="custom-control custom-checkbox mb-0">
+                              <input class="custom-control-input" id="customCheck1" type="checkbox">
+                              <label class="custom-control-label" for="customCheck1">Accreditations</label>
+                            </div>
+                        </div>
+                      </form>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
