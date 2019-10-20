@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Curriculums
+    Degree Programs
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -68,7 +68,14 @@
             <div class="card-header border-0">
               <div class="row">
                 <div class="col">
-                  <h3 class="mb-0">Curriculums</h3>
+                  <h3 class="mb-0">Degree Programs</h3>
+                </div>
+                <div class="col text-right">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal" style="float:right">
+                  <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
+                  Add Degree Program
+                </button>
                 </div>
               </div>
             </div>
@@ -78,8 +85,9 @@
                   <tr>
                     <th scope="col">Program Name</th>
                     <th scope="col">Program Code</th>
-                    <th scope="col">Year</th>
-                    <th scope="col">Number of Units</th>
+                    <th scope="col">Year Started</th>
+                    <th scope="col">College</th>
+                    <th scope="col">Accreditations</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
@@ -89,15 +97,21 @@
                       BS Information Systems
                     </th>
                     <td>
-                      BSINSYS
+                      BS-INSYS
+                    </td>
+                    <td>
+                      2010
+                    </td>
+                    <td>
+                      CCS
                     </td>
                     <td>
                       <span class="badge badge-dot mr-4">
-                        <i class="bg-success"></i>2018
+                        <i class="bg-info"></i> BS-INSYS PAASCU 2018
+                      </span><br>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i> BS-INSYS PAASCU 2013
                       </span>
-                    </td>
-                    <td>
-                      162.0 Units
                     </td>
                     <td class="text-right">
                       <div class="dropdown">
@@ -106,6 +120,45 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#">View Curriculum</a>
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Archive</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      BS Information Technology
+                    </th>
+                    <td>
+                      BS-IT
+                    </td>
+                    <td>
+                      2005
+                    </td>
+                    <td>
+                      CCS
+                    </td>
+                    <td>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-info"></i> BS-IT PAASCU 2018
+                      </span><br>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i> BS-IT PAASCU 2013
+                      </span><br>
+                      <span class="badge badge-dot mr-4">
+                        <i class="bg-success"></i> BS-IT PAASCU 2008
+                      </span><br>
+                    </td>
+                    <td class="text-right">
+                      <div class="dropdown">
+                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                          <a class="dropdown-item" href="#">View Curriculum</a>
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Archive</a>
                         </div>
                       </div>
                     </td>

@@ -68,21 +68,7 @@
     <div class="container-fluid mt--7">
       <!-- Table -->
       <div class="row mt-5">
-        <div class="col-xl-3 mb-5 mb-xl-0">
-          <div class="card shadow">
-            <div class="card-header border-1">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Legend</h3>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">              
-              <h4 style="padding-top: 7px; padding-bottom: 7px">I. ABCD</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-9 mb-5 mb-xl-0">
+        <div class="col-xl-12 mb-5 mb-xl-0">
           <div class="card shadow">
             <div class="card-header border-1">
               <div class="row align-items-center">
@@ -103,7 +89,7 @@
               </div>
             </div>
             <div class="card-body px-lg-5 py-lg-5">
-              	<div>
+              <div>
 	              	<h4>Score: N/A
 		                <span>
 			              	<!-- Button trigger modal -->
@@ -112,7 +98,7 @@
 				               	Score Section
 				           	</button>
 		                </span>
-	            	</h4>
+	            	  </h4>
 		              	<div class="modal fade" id="scoreModal1" tabindex="-1" role="dialog" aria-labelledby="scoreModalLabel1" aria-hidden="true">
 		                	<div class="modal-dialog modal-dialog-centered" role="document">
 		                  <div class="modal-content">
@@ -125,25 +111,25 @@
 		                    <div class="modal-body">
 		                    <form role="form">
 		                    	<div class="custom-control custom-radio mb-3">
-								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
-								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
-								</div>
-		                    	<div class="custom-control custom-radio mb-3">
-								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
-								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
-								</div>
-		                    	<div class="custom-control custom-radio mb-3">
-								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
-								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
-								</div>
-		                    	<div class="custom-control custom-radio mb-3">
-								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
-								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
-								</div>
-		                    	<div class="custom-control custom-radio mb-3">
-								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
-								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
-								</div>
+          								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
+          								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
+          								</div>
+          		                    	<div class="custom-control custom-radio mb-3">
+          								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
+          								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
+          								</div>
+          		                    	<div class="custom-control custom-radio mb-3">
+          								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
+          								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
+          								</div>
+          		                    	<div class="custom-control custom-radio mb-3">
+          								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
+          								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
+          								</div>
+          		                    	<div class="custom-control custom-radio mb-3">
+          								  <input name="custom-radio-2" class="custom-control-input" id="customRadio5" type="radio">
+          								  <label class="custom-control-label" for="customRadio5">E - Excellent</label>
+          								</div>
 		                    </form>
 		                    </div>
 		                    <div class="modal-footer">
@@ -154,9 +140,13 @@
 		                	</div>
 		              	</div>
 	          	</div>
-	          <br>
+	             <br>
               <div id="froala-editor"></div>
               <br><br>
+              <div>
+                  <h4>Table: <a href="#">table.jpg</a></h4>
+              </div>
+              <br>
               <div id="comments">
                 <div class="timeline-block">
                   <div class="timeline-content">
@@ -185,6 +175,8 @@
                       <th scope="col">Code</th>
                       <th scope="col">Name</th>
                       <th scope="col">Type</th>
+                      <th scope="col">No. of Files</th>
+                      <th scope="col">Last Update</th>
                       <th scope="col" width="3%"></th>
                     </tr>
                   </thead>
@@ -198,6 +190,12 @@
                       </th>
                       <td scope="row">
                         Appendix
+                      </td>
+                      <td scope="row">
+                        6
+                      </td>
+                      <td scope="row">
+                        Oct 20, 2019
                       </td>
                       <td class="text-right">
                         <div class="dropdown">

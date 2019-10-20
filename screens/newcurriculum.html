@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    New Accreditation
+    Update Curriculum
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -66,29 +66,54 @@
         <div class="col">
           <div class="card shadow">
             <div class="card-header border-1">
-              <h3 class="mb-0">Recommendations</h3>
+              <h3 class="mb-0">Update Curriculum</h3>
             </div>
             <div class="card-body px-lg-5 py-lg-5">
               <form role="form">
-                <div class="text-muted text-left mt-2 mb-3">
-                  <button type="button" class="btn btn-success" onclick="addRecommendation()">Add Recommendations</button><br>
-                </div><br>
-                <div id="section">
-                  <div>
-                  <div class="row">
-                    <div class="col-10">
-                      <div class="form-group mb-3">
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Recommendation" type="text">
-                        </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Degree Program</label>
+                      <div class="input-group input-group-alternative">
+                        <select class="form-control">
+                            <option>BSINSYS</option> 
+                            <option>BSIT</option>
+                            <option>BSCS</option>            
+                        </select>
                       </div>
                     </div>
-                    <div class="col-1">
-                      <button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = 'none'">x</button>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label class="form-control-label">Year</label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="" type="year">
+                      </div>
                     </div>
                   </div>
-                  </div>
                 </div>
+                <hr>
+                <h6 class="heading-small text-muted mb-2">Courses</h6><br>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">DEV-APP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">DEV-WEB</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">PROJTMAN</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">SYSDEVE</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">THSIS01</label>
+                  </div>
               </form>
             </div>
             <div class="card-footer py-4">
@@ -143,8 +168,8 @@
   </script>
 
   <script>
-    function addRecommendation(){
-      var x = '<div><div class="row"><div class="col-10"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Recommendation" type="text"></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
+    function addSection(){
+      var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-9"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
 
       document.getElementById('section').insertAdjacentHTML('beforeend', x);
     }

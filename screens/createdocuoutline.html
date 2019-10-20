@@ -105,34 +105,57 @@
                     <div class="col-1">
                       <button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
                           <input class="form-control" placeholder="Section" type="text">
                         </div>
                       </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-3">
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
                           <select class="form-control">
-                              <option>Narrative</option>
-                              <option>Narrative w/ Table</option> 
-                              <option>Narrative w/ Score</option> 
-                              <option>Narrative w/ Score & Table</option>           
+                              <option value="volvo">Narrative Only</option>
+                            <optgroup label="w/ Score">
+                              <option value="volvo">Score Type 1</option>
+                              <option value="saab">Score Type 2</option>
+                            </optgroup>
+                            <optgroup label="w/ Table">
+                              <option value="mercedes" data-toggle="modal" data-target="#scoreModal1">Table</option>
+                            </optgroup>
+                            <optgroup label="w/ Table & Score">
+                              <option value="volvo" data-toggle="modal" data-target="#scoreModal1">Score Type 1</option>
+                              <option value="saab" data-toggle="modal" data-target="#scoreModal1">Score Type 2</option>
+                            </optgroup>
                           </select>
                         </div>
                       </div>
                     </div>
-                    <div class="col-2">
-                      <div class="form-group mb-3">
-                        <div class="input-group input-group-alternative">
-                          <select class="form-control">
-                            <option>N/A</option>
-                            <option>A - E</option>
-                            <option>1 - 7</option>           
-                          </select>
+
+                    <div class="modal fade" id="scoreModal1" tabindex="-1" role="dialog" aria-labelledby="scoreModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="scoreModalLabel">Score Section</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
+                        <div class="modal-body">
+                        <form role="form">
+
+                        <div class="form-group mb-3">
+                          <input class="form-control" placeholder="Section" type="file">
+                        </div>
+
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                      </div>
                       </div>
                     </div>
                     <div class="col-1">

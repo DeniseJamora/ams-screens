@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    New Accreditation
+    My Profile
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -31,6 +31,7 @@
   <link href="../assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <link href="../assets/css/tabs.css" rel="stylesheet" />
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
@@ -61,43 +62,112 @@
       </div>
     </div>
     <div class="container-fluid mt--7">
-      <!-- Table -->
+
       <div class="row">
-        <div class="col">
-          <div class="card shadow">
-            <div class="card-header border-1">
-              <h3 class="mb-0">Recommendations</h3>
+        <div class="col-xl-12 order-xl-2">
+          <div class="card card-profile">
+            <img src="../assets/img/theme/img-1-1000x600.jpg" style="height: 175px" alt="Image placeholder" class="card-img-top">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="../assets/img/theme/team-4.jpg" width="120px" height="120px" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="card-body px-lg-5 py-lg-5">
-              <form role="form">
-                <div class="text-muted text-left mt-2 mb-3">
-                  <button type="button" class="btn btn-success" onclick="addRecommendation()">Add Recommendations</button><br>
-                </div><br>
-                <div id="section">
-                  <div>
+            <div class="card-header text-right border-0 pt-6 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex8 float-right">
+                <a href="#" class="btn btn-sm btn-default float-right">Edit Profile</a>
+              </div>
+            </div>
+            <div class="card-body pt-4">
+              <div class="text-center mb-5">
+                <h5 class="h3">
+                  Jessica Jones</span>
+                </h5>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Information Technology Department
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="heading-small text-muted mb-4">User information</h6>
                   <div class="row">
-                    <div class="col-10">
-                      <div class="form-group mb-3">
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Recommendation" type="text">
-                        </div>
-                      </div>
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Given Name</p>
                     </div>
-                    <div class="col-1">
-                      <button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = 'none'">x</button>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>Jessica</b></p>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Middle Initial</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>A.</b></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Surname</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>Jones</b></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Email</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>jessica.jones@mail.com</b></p>
+                    </div>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="card-footer py-4">
-              <div class="text-right">
-                <a href="docuoutlines.html"><button type="button" class="btn btn-primary">Save</button></a>
+                <div class="col-6">
+                  <h6 class="heading-small text-muted mb-4">Faculty Information</h6>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">College/Unit</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>CCS</b></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Department/Office</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>IT</b></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Faculty Classification</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>Full Time</b></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-5">
+                      <p class="mb-3 text-sm text-muted">Rank</p>
+                    </div>
+                    <div class="col-7">
+                      <p class="mb-0 text-sm"><b>N/A</b></p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <br>
+      
       </div>
       <!-- Footer -->
       <footer class="footer">
@@ -140,14 +210,6 @@
         token: "ee6fab19c5a04ac1a32a645abde4613a",
         application: "argon-dashboard-free"
       });
-  </script>
-
-  <script>
-    function addRecommendation(){
-      var x = '<div><div class="row"><div class="col-10"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Recommendation" type="text"></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
-
-      document.getElementById('section').insertAdjacentHTML('beforeend', x);
-    }
   </script>
 </body>
 
