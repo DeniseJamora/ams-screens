@@ -120,6 +120,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="course.html">View Course</a>
+                          <a class="dropdown-item" href="" data-toggle="modal" data-target="#updateModal">Update Syllabus</a>
                           <a class="dropdown-item" href="#">Edit</a>
                           <a class="dropdown-item" href="#">Delete</a>
                         </div>
@@ -130,53 +131,33 @@
               </table>
             </div>
             <div class="card-footer py-4">
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Add Course</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                    <form role="form">
-                      <div class="form-group mb-3">
-                        <label class="form-control-label">Course Name</label>
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Course Name" type="text">
-                        </div>
+                <!-- Modal -->
+                <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="updateModalLabel">Update Syllabus</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="form-group mb-3">
-                        <label class="form-control-label">Course Code</label>
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Course Code" type="text">
-                        </div>
+                      <div class="modal-body">
+                        <form role="form">
+                          <div class="form-group mb-3">
+                            <label class="form-control-label">Select File</label>
+                            <div class="input-group input-group-alternative">
+                              <input class="form-control" type="file">
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                      <div class="form-group mb-3">
-                        <label class="form-control-label">Pre Requisite</label>
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Course Code" type="text">
-                        </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Update</button>
                       </div>
-					            <div class="form-group mb-3">
-                        <label class="form-control-label">Co Requisite</label>
-                        <div class="input-group input-group-alternative">
-                          <input class="form-control" placeholder="Course Code" type="text">
-                        </div>
-                      </div>
-                    </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                      <button type="button" class="btn btn-success">Add</button>
                     </div>
                   </div>
                 </div>
-              </div>
-
-
               <!-- Modal -->
               <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="scheduleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
