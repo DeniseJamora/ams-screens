@@ -71,12 +71,17 @@
                   <h3 class="mb-0">Course Overview</h3>
                 </div>
                 <div class="col text-right">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal" style="float:right">
-                  <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
-                  Add Course
-                </button>
-              </div>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-success btn-sm" href="newcourse.html" style="float:right">
+                    <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
+                    Add Course
+                  </button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#scheduleModal" style="float:right; margin-right: 2%">
+                    <span class="btn-inner--icon"><i class="ni ni-fat-add"></i></span>
+                    Schedule Syllabus Update
+                  </button>
+                </div>
               </div>
             </div>
             <div class="table-responsive">
@@ -114,7 +119,7 @@
                           <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="#">View Course</a>
+                          <a class="dropdown-item" href="course.html">View Course</a>
                           <a class="dropdown-item" href="#">Edit</a>
                           <a class="dropdown-item" href="#">Delete</a>
                         </div>
@@ -155,7 +160,7 @@
                           <input class="form-control" placeholder="Course Code" type="text">
                         </div>
                       </div>
-					  <div class="form-group mb-3">
+					            <div class="form-group mb-3">
                         <label class="form-control-label">Co Requisite</label>
                         <div class="input-group input-group-alternative">
                           <input class="form-control" placeholder="Course Code" type="text">
@@ -171,6 +176,34 @@
                 </div>
               </div>
 
+
+              <!-- Modal -->
+              <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="scheduleModalLabel">Schedule Update Notification</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form role="form">
+                        <div class="form-group mb-3">
+                          <label class="form-control-label">Schedule Notification <span class="text-sm"><h6 style="color: red">* interval in days</h6></span></label>
+                          <div class="input-group input-group-alternative">
+                            <input class="form-control" placeholder="e.g. 30" type="text">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <nav aria-label="...">
                 <ul class="pagination justify-content-end mb-0">
                   <li class="page-item disabled">

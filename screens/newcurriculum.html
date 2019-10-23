@@ -33,6 +33,15 @@
   <link href="../assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- selec2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.11/js/select2.min.js"></script>
+
+  <script>
+  	$(document).ready(function() {
+    	$('#select2').select2();
+	});
+  </script>
 </head>
 
 <body class="">
@@ -71,7 +80,7 @@
             <div class="card-body px-lg-5 py-lg-5">
               <form role="form">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-3">
                     <div class="form-group mb-3">
                       <label class="form-control-label">Degree Program</label>
                       <div class="input-group input-group-alternative">
@@ -83,37 +92,41 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="form-group">
-                      <label class="form-control-label">Year</label>
+                  <div class="col-3">
+                    <div class="form-group mb-3">
+                      <label class="form-control-label">Academic Term</label>
                       <div class="input-group input-group-alternative">
-                        <input class="form-control" placeholder="" type="year">
+                        <select class="form-control">
+                            <option>Semester</option> 
+                            <option>Trimester</option>
+                            <option>Quarter</option>            
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label class="form-control-label">Start</label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="" type="month">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-group">
+                      <label class="form-control-label">End</label>
+                      <div class="input-group input-group-alternative">
+                        <input class="form-control" placeholder="" type="month">
                       </div>
                     </div>
                   </div>
                 </div>
                 <hr>
-                <h6 class="heading-small text-muted mb-2">Courses</h6><br>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">DEV-APP</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">DEV-WEB</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">PROJTMAN</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">SYSDEVE</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">THSIS01</label>
-                  </div>
+                <div class="text-muted text-left mt-2 mb-3">
+                  <button type="button" class="btn btn-success" onclick="addTerm()">Add Academic Term</button><br>
+                </div><br>
+                <div id="term">
+                </div>
               </form>
             </div>
             <div class="card-footer py-4">
@@ -166,12 +179,14 @@
         application: "argon-dashboard-free"
       });
   </script>
-
   <script>
-    function addSection(){
-      var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-9"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
+  	var i = 0;
+    function addTerm(){
 
-      document.getElementById('section').insertAdjacentHTML('beforeend', x);
+      i++;
+      var x = '<div><div class="row"><div class="col-9"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Academic Term ' + i +'" type="text"></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
+
+      document.getElementById('term').insertAdjacentHTML('beforeend', x);
     }
   </script>
 </body>
