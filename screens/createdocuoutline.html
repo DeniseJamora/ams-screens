@@ -102,35 +102,67 @@
                   <div>
                   <br>
                   <div class="row">
-                    <div class="col-5">
+                    <div class="col-1">
+                      <button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button>
+                    </div>
+                    <div id="documentTitle" class="col-6 pl-0">
                       <div class="form-group mb-3">
-                        <div class="input-group input-group-merge">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button>
-                          </div>
-                          <input class="form-control" placeholder="Section" type="text" style="padding-left: 7px">
+                        <div class="input-group input-group-alternative">
+                          <input class="form-control" placeholder="Section" type="text">
                         </div>
                       </div>
                     </div>
-                    <div class="col-2">
+					
+					<div class="col-1 pl-0 ">
+					<a href=""><button type="button" class="btn btn-primary">Upload Table</button></a>
+					</div>
+					
+					<div id="Scoring" class="col-1 pr-0 ">  <div class="form-group mb-3">  <div class="input-group input-group-alternative">  <select class="form-control">  <option value="volvo">1 - 7</option>   <option value="volvo">A - E</option>  <option value="volvo">A - G</option>  </select>  </div>  </div>  </div>
+					
+                    <div id="documentType" class="col-2 pr-0">
                       <div class="form-group mb-3">
                         <div class="input-group input-group-alternative">
-                          <select class="form-control" onchange="dropdown()" id="dropdown">
-                            <option>Narrative</option>
-                            <option>Narrative w/ Score</option>
-                            <option>Narrative w/ Table</option>
-                            <option>Narrative w/ Score & Table</option>
+                          <select class="form-control" id="typeSelect" onchange="Check()">
+                              <option value="">Narrative Only</option>
+                            <optgroup label="w/ Score">
+                              <option value="Score1">Score Type 1</option>
+                              <option value="Score2">Score Type 2</option>
+                            </optgroup>
+                            <optgroup label="w/ Table">
+                              <option value="Table" data-toggle="modal" data-target="#scoreModal1">Table</option>
+                            </optgroup>
+                            <optgroup label="w/ Table & Score">
+                              <option value="TableScore" data-toggle="modal" data-target="#scoreModal1">Score Type 1</option>
+                              <option value="TableScore" data-toggle="modal" data-target="#scoreModal1">Score Type 2</option>
+                            </optgroup>
                           </select>
                         </div>
                       </div>
                     </div>
-                    <div class="col-2" id="score">
-                      <div class="form-group mb-3">
-                        <div class="input-group input-group-alternative">
-                          <select class="form-control">
-                            <option>Score Type</option>
-                          </select>
+					
+                    <div class="modal fade" id="scoreModal1" tabindex="-1" role="dialog" aria-labelledby="scoreModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="scoreModalLabel">Score Section</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
+                        <div class="modal-body">
+                        <form role="form">
+
+                        <div class="form-group mb-3">
+                          <input class="form-control" placeholder="Section" type="file">
+                        </div>
+
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                      </div>
                       </div>
                     </div>
                     <div class="col-1">
@@ -192,22 +224,56 @@
       });
   </script>
 
+  <!-- Score + Table JS -->
   <script>
-    function dropdown(){
-      var a = document.getElementById('dropdown').value;
-
-      if a = "Narrative w/ Score"
-        document.getElementById('score').style.display = 'inline';
+  function check() {
+	var type = document.getElementById("typeSelect");
+	
+	if (type.value == "Score1" || type.value == "Score2"){
+		withScore();    
     }
+  }
+  
+  
+  function withScore() {
+	adjustType();
+	
+  }
+  
+   function adjustType() {
+	document.getElementById("documentType").className = "col-2 pr-0";
+	insertScore();
+  }
+  
+  function insertScore() {
+	var Score = ' <div id="Scoring" class="col-1 pr-0 pl-0"> + <div class="form-group mb-3"> + <div class="input-group input-group-alternative"> + <select class="form-control"> + <option value="volvo">1 - 7</option>  + <option value="volvo">A - E</option> + <option value="volvo">A - G</option> + </select> + </div> + </div> + </div>'
+	
+	document.getElementById("documentTitle").insertAdjacentHTML('beforeend', Score);
+  }
+  
+  
+  
+  
+  function withTable(){
+  
+  }
+  
+  function withTableScore(){
+  
+  }
+  
   </script>
+  
+  
+  <!-- Document Outline ADD JS -->
   <script>
     function addSection(){
       var x = '<div><div class="row"><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub1(this.parentElement.parentElement)">+</button></div><div class="col-6"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div></div>';
 
       document.getElementById('section').insertAdjacentHTML('beforeend', x);
     }
-  </script>
-  <script>
+	
+	
     function addSub1(parentDiv){
       var x = '<div class="row"><div class="col-1"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub2(this.parentElement.parentElement)">+</button></div><div class="col-5"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
@@ -215,8 +281,8 @@
 
         div.insertAdjacentHTML('beforeend', x);
     }
-  </script>
-  <script>
+	
+	
     function addSub2(parentDiv){
       var x = '<div class="row"><div class="col-2"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub3(this.parentElement.parentElement)">+</button></div><div class="col-4"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
@@ -224,8 +290,8 @@
 
         div.insertAdjacentHTML('beforeend', x);
     }
-  </script>
-  <script>
+	
+	
     function addSub3(parentDiv){
       var x = '<div class="row"><div class="col-3"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub4(this.parentElement.parentElement)">+</button></div><div class="col-3"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
@@ -233,8 +299,8 @@
 
         div.insertAdjacentHTML('beforeend', x);
     }
-  </script>
-  <script>
+	
+	
     function addSub4(parentDiv){
       var x = '<div class="row"><div class="col-4"></div><div class="col-1"><button class="btn btn-icon btn-2 btn-outline-success" type="button" onclick="addSub5(this.parentElement.parentElement)">+</button></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><input class="form-control" placeholder="Section" type="text"></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Narrative</option><option>Narrative w/ Table</option><option>Narrative w/ Score</option><option>Narrative w/ Score & Table</option></select></div></div></div><div class="col-2"><div class="form-group mb-3"><div class="input-group input-group-alternative"><select class="form-control"><option>Score Type 1</option><option>Score Type 2</option></select></div></div></div><div class="col-1"><button class="btn btn-icon btn-2 btn-danger" type="button" onclick="this.parentElement.parentElement.style.display = '+"'"+'none'+"'"+'"'+'>x</button></div></div>';
 
